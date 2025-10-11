@@ -4,6 +4,7 @@ import bannerjoistik from "../assets/bannerjoistik.png";
 import bannerkeybord from "../assets/bannerkeybord.png";
 import which from "../assets/which.png";
 import camera from "../assets/camera.png";
+import OrderButton from "./OrderButton";
 
 const Banner = () => {
   return (
@@ -66,9 +67,10 @@ const Banner = () => {
                 mde
               </p>
               {/* <button className="uppercase py-[10px] px-[15px] bg-white rounded-[10px] font-medium cursor-pointer">buy now</button> */}
-              <button className="relative uppercase flex py-[10px] font-medium cursor-pointer px-[15px] items-center justify-center overflow-hidden bg-white text-black rounded-[10px] shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-primary before:duration-500 before:ease-out hover:shadow-primary hover:text-white hover:before:h-56 hover:before:w-56">
+              {/* <button className="relative uppercase flex py-[10px] font-medium cursor-pointer px-[15px] items-center justify-center overflow-hidden bg-white text-black rounded-[10px] shadow-2xl transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-primary before:duration-500 before:ease-out hover:shadow-primary hover:text-white hover:before:h-56 hover:before:w-56">
                 <span className="relative z-10">buy now</span>
-              </button>
+              </button> */}
+              <OrderButton ordertile='buy now'/>
             </div>
           </div>
           <div>
