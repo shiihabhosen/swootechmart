@@ -20,6 +20,7 @@ import Contact from "./Pages/Contact";
 import Login from "./Pages/Login";
 import Profile from "./Pages/Profile";
 import RegisterPage from "./Pages/RegisterPage";
+import ProductDetails from "./Pages/ProductDetails";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
       {/* <Contact/> */}
       <Checkout/>
       <About/>
+      <ProductDetails/>
     </>
   );
 }

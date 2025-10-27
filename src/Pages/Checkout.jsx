@@ -6,6 +6,7 @@ import { MdOutlineClose } from "react-icons/md";
 import { HiPlusSm } from "react-icons/hi";
 import { HiMinusSm } from "react-icons/hi";
 import paypal from "../assets/payple.png";
+import PlaceOrder from "../Component/PlaceOrder";
 
 const Checkout = () => {
   const [country, setCountry] = useState(null);
@@ -267,9 +268,7 @@ const Checkout = () => {
                   <img src={paypal} alt="" className="h-5" />
                 </div>
 
-                <button className="w-full h-[50px] bg-green-600 rounded-[10px] uppercase flex justify-center items-center font-bold cursor-pointer text-white shadow-md hover:bg-green-700 transition duration-150">
-                  Place Order
-                </button>
+              <PlaceOrder placenaem="Place Order" />
               </div>
             </div>
           </div>
