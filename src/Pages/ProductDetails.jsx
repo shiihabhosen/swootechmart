@@ -25,12 +25,32 @@ import { FaHeart } from "react-icons/fa";
 import { MdRefresh } from "react-icons/md";
 import paymetoth from "../assets/pay.png";
 import { TbTruckDelivery } from "react-icons/tb";
-import head from '../assets/minihead.png'
-import applewath from '../assets/applewath.png'
+import head from "../assets/minihead.png";
+import applewath from "../assets/applewath.png";
+import tablet from "../assets/tablet.png";
+import joistik from "../assets/joistik.png";
+import discupthinpic from "../assets/discupthinpic.png";
+import phonereviw from "../assets/phonereviw.png";
+import phonereviw0 from "../assets/phonereviw0.png";
+import BestSellerCard from "../Component/BestSellerCard";
+import phone1 from "../assets/phone1.png";
+import phone2 from "../assets/phone2.png";
+import phone3 from "../assets/phone3.png";
+import phone4 from "../assets/phone4.png";
+import phone5 from "../assets/phone5.png";
+import Save from "../Component/Save";
+import { FaRegHeart } from "react-icons/fa6";
+import New from "../Component/New";
+import RecentlyViewdCard from "../Component/RecentlyViewdCard";
+import viewpic1 from "../assets/viewpic1.png";
+import viewpic2 from "../assets/viewpic2.png";
+import viewpic3 from "../assets/viewpic3.png";
+import viewpic4 from "../assets/viewpic4.png";
 
 const ProductDetails = () => {
   return (
     <Container>
+      {/* product section */}
       <div className="w-full h-[850.23px] bg-white p-5 flex justify-between gap-6">
         <div className="w-[524.16px] h-[638px] shadow-md">
           <div className="relative">
@@ -211,29 +231,292 @@ const ProductDetails = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-[409.59px] bg-white">
-        <div className="w-[1018px] h-[409px] bg-amber-400 p-[30px] ">
+      <div className="w-full h-[409.59px] gap-2 flex">
+        <div className="w-[1018px] h-[409px] bg-white rounded-[10px] p-[30px] my-5">
           <h5 className="font-bold uppercase ">frequently bought together</h5>
           <div className="flex justify-start items-center">
-            <img src={details01} alt="" className="w-[190px] h-[200px] object-cover" />
+            <img
+              src={details01}
+              alt=""
+              className="w-[190px] h-[200px] object-cover"
+            />
             <div className="w-[30px] h-[30px] rounded-full flex justify-center items-center cursor-pointer bg-[#E2E4EB] ">
               <FaPlus />
             </div>
-           <div className="relative">
-             <img src={head} alt="" className="w-[190px] h-[200px] object-cover" />
-               <div className="absolute inset-1  bg-white/60"></div>
-           </div>
+            <div className="relative">
+              <img
+                src={head}
+                alt=""
+                className="w-[190px] h-[200px] object-cover"
+              />
+              <div className="absolute inset-1  bg-white/60"></div>
+            </div>
             <div className="w-[30px] h-[30px] rounded-full flex justify-center items-center cursor-pointer bg-[#E2E4EB] ">
               <FaPlus />
             </div>
-             <div className="relative">
-             <img src={applewath} alt="" className="w-[190px] h-[200px] object-cover" />
-               <div className="absolute inset-1  bg-white/60"></div>
-           </div>
+            <div className="relative">
+              <img
+                src={applewath}
+                alt=""
+                className="w-[190px] h-[200px] object-cover"
+              />
+              <div className="absolute inset-1  bg-white/60"></div>
+            </div>
             <div className="w-[30px] h-[30px] rounded-full flex justify-center items-center cursor-pointer bg-[#E2E4EB] ">
               <FaPlus />
+            </div>
+            <div className="mt-[-50px] ml-[50px]">
+              <h6>Total Price:</h6>
+              <h3 className="text-[30px] font-bold pb-[30px]">$609.00</h3>
+              <PlaceOrder
+                placenaem="Add To Cart"
+                className="!w-[217px] h-[50px]"
+              />
+              <div className="text-tertiary flex items-center gap-4 py-4">
+                <FaHeart />
+                <h6> Ad all to Wishlist</h6>
+              </div>
             </div>
           </div>
+          <div className="my-[50px]">
+            <div className="flex gap-3 items-center">
+              <input type="checkbox" />
+              <h5>
+                {" "}
+                <span className="font-bold">This item:</span> Somseng Galatero
+                X6 Ultra LTE 4G/128 Gb, Black Smartphone{" "}
+                <span className="text-red-500">( $569.00 )</span>
+              </h5>
+            </div>
+            <div className="flex gap-3 items-center">
+              <input type="checkbox" />
+              <h5>
+                {" "}
+                BOSO 2 Wireless On Ear Headphone
+                <span className="text-red-500">($369.00 )</span>
+              </h5>
+            </div>
+            <div className="flex gap-3 items-center">
+              <input type="checkbox" />
+              <h5>
+                {" "}
+                Opplo Watch Series 8 GPS + Cellular Stainless Stell Case with
+                Milanese Loop <span className="text-red-500">( $129.00 )</span>
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div className="space-y-2 my-5">
+          <img
+            src={joistik}
+            alt=""
+            className=" w-[334px] h-[200px] bg-cover bg-center rounded-[10px] "
+          />
+          <div className="relative ">
+            {/* <img src={which} alt="" className="bg-cover bg-center " /> */}
+            <div className="absolute top-0 pl-[25px] py-5 text-white ">
+              <h5 className="uppercase font-bold">iPad Pro</h5>
+              <h4 className="text-[24px] ">Mini 5</h4>
+              <div className="mt-5">
+                <p>FROM</p>
+                <h2 className="text-[24px] text-primary">$169</h2>
+              </div>
+            </div>
+            <img
+              src={tablet}
+              alt=""
+              className=" w-[334px] h-[200px] bg-cover bg-center rounded-[10px] "
+            />
+          </div>
+        </div>
+      </div>
+      {/* description section */}
+      <div className="w-full h-[1460px] mt-10 rounded-[10px] bg-white">
+        <div className="p-[30px] ">
+          <ul className="font-bold uppercase cursor-pointer flex items-center gap-[50px]">
+            <li>description</li>
+            <li>reviews (5)</li>
+            <li>additional information</li>
+          </ul>
+          <p className="text-[14px] py-[35px]">
+            Built for ultra-fast performance, the thin and lightweight Samsung
+            Galaxy Tab S2 goes anywhere you go. Photos, movies and documents pop
+            on a crisp, clear Super AMOLED display. Expandable memory lets you
+            enjoy more of your favorite content. And connecting and sharing
+            between all your Samsung devices is easier than ever. Welcome to
+            life with the reimagined Samsung Galaxy Tab S2. Watch thev world
+            come to life on your tablet's Super AMOLED display * . With deep
+            contrast, rich colors and crisp details, you won't miss a thing
+          </p>
+          <img
+            src={discupthinpic}
+            alt=""
+            className=" bg-cover bg-center rounded-[10px] "
+          />
+          <p className="italic text-center py-5 text-[#777777]">
+            * The Galaxy Tab S2’s 4 : 3 ratio display provides you with an ideal
+            environment for performing office tasks.
+          </p>
+          <h3 className="text-[18px] font-bold py-2">From the manufacturer</h3>
+          <p className="text-[14px] text-[#555555]">
+            Dive into the blockbuster movies you can't wait to see. Switch
+            between your favorite apps quickly and easily. The new and improved
+            octa-core processor gives you the power and speed you need to see
+            more and do more. Expand your tablet's memory from 32GB to up to an
+            additional 128GB and enjoy more of your favorite music, photos,
+            movies and games on the go with a microSD card. With Quick Connect,
+            start a show on your Smart TV and, with the touch of a button, take
+            it with you by moving it to your Galaxy Tab S2.
+          </p>
+          <p className="text-[14px] py-4 text-[#555555]">
+            Or send videos and photos from your tablet screen to your TV screen
+            to share with everyone in the room. Work effortlessly between your
+            Samsung tablet and Samsung smartphone with SideSync. Quickly drag
+            and drop photos between devices. And even respond to a call from
+            your smartphone right on your tablet screen.
+          </p>
+          <div className="flex gap-4 my-10">
+            <img
+              src={phonereviw}
+              alt=""
+              className="w-[600px] h-[400px] bg-cover bg-center rounded-[10px] "
+            />
+            <img
+              src={phonereviw0}
+              alt=""
+              className="w-[600px] h-[400px] bg-cover bg-center rounded-[10px] "
+            />
+          </div>
+          <h3 className="text-[18px] font-bold py-2">
+            Semsong Galaxy Tab S2, 8-Inch, White
+          </h3>
+          <p className="text-[14px] text-[#555555]">
+            The Samsung Galaxy Tab S2 offers dual cameras: a rear-facing
+            8-megapixel camera with Auto Focus and a 2.1-megapixel camera on the
+            front. Take high-quality pictures and video or video chat with
+            friends, family, and colleagues. Customize your Galaxy Tab S2 with
+            the apps you use most. The Samsung Galaxy Essentials widget provides
+            a collection of premium complimentary apps optimized for your tablet
+            screen. Select and download the apps you want to instantly upgrade
+            your tablet experience.
+            <br />
+            <p className="font-bold uppercase text-[#0D6EFD] my-8">
+              <a href="">show more </a>
+            </p>
+          </p>
+        </div>
+      </div>
+      <div className="w-full h-[600px] bg-white rounded-[10px] p-[30px] my-5 ">
+        <h5 className="font-bold uppercase pb-5">related products</h5>
+        <div className="flex justify-between">
+          <div>
+            <div className="flex gap-[80px]">
+              <Save saveparsen="$59.00" />
+              <div className="w-12 h-12 bg-secundary cursor-pointer rounded-full flex justify-center items-center">
+                <FaRegHeart className=" text-2xl" />
+              </div>
+            </div>
+            <BestSellerCard
+              img={phone1}
+              title="SROK Smart Phone 128GB,Oled Retina"
+              productnowprice="$579.00"
+              productoldprice="$859.00"
+            />
+          </div>
+          <div>
+            <div className="flex gap-[80px]">
+              <Save saveparsen="$59.00" />
+              <div className="w-12 h-12 bg-secundary cursor-pointer rounded-full flex justify-center items-center">
+                <FaRegHeart className=" text-2xl" />
+              </div>
+            </div>
+            <BestSellerCard
+              img={phone2}
+              title="SROK Smart Phone 128GB,Oled Retina"
+              productnowprice="$579.00"
+              productoldprice="$859.00"
+            />
+          </div>
+          <div>
+            <div className="flex gap-[80px]">
+              <Save saveparsen="$59.00" />
+              <div className="w-12 h-12 bg-secundary cursor-pointer rounded-full flex justify-center items-center">
+                <FaRegHeart className=" text-2xl" />
+              </div>
+            </div>
+            <BestSellerCard
+              img={phone3}
+              title="SROK Smart Phone 128GB,Oled Retina"
+              productnowprice="$579.00"
+              productoldprice="$859.00"
+            />
+          </div>
+          <div>
+            <div className="flex gap-[80px]">
+              <Save saveparsen="$59.00" />
+              <div className="w-12 h-12 bg-secundary cursor-pointer rounded-full flex justify-center items-center">
+                <FaRegHeart className=" text-2xl" />
+              </div>
+            </div>
+            <BestSellerCard
+              img={phone4}
+              title="SROK Smart Phone 128GB,Oled Retina"
+              productnowprice="$579.00"
+              productoldprice="$859.00"
+            />
+          </div>
+          <div>
+            <div className="flex gap-[80px]">
+              <Save saveparsen="$59.00" />
+              <div className="w-12 h-12 bg-secundary cursor-pointer rounded-full flex justify-center items-center">
+                <FaRegHeart className=" text-2xl" />
+              </div>
+            </div>
+            <BestSellerCard
+              img={phone5}
+              title="SROK Smart Phone 128GB,Oled Retina"
+              productnowprice="$579.00"
+              productoldprice="$859.00"
+            />
+          </div>
+        </div>
+      </div>
+      {/* resently veiw*/}
+        <div className="w-full h-[237.69px] bg-white rounded-[10px] mb-5">
+        <div className="p-[30px] flex gap-[30px] ">
+          <h5 className="uppercase text-[18px] font-bold ">
+            your recently viewed
+          </h5>
+          <p className="text-tertiary">
+            <a href="">View all</a>
+          </p>
+        </div>
+        <div className="flex justify-between">
+          <RecentlyViewdCard
+            viewpic={viewpic1}
+            posithion="NEW"
+            productTitle="Xomie Remid 8 Sport Water Resitance Watch"
+            price="$579.00"
+          />
+          <RecentlyViewdCard
+            viewpic={viewpic2}
+            posithion="NEW"
+            productTitle="Microte Surface 2.0 Laptop"
+            price="$979.00"
+          />
+          <RecentlyViewdCard
+            viewpic={viewpic3}
+            posithion="NEW"
+            productTitle="aPod Pro Tablet 2023 LTE + Wifi, GPS Cellular 12.9 Inch, 512GB"
+            price="$579.00"
+          />
+          <RecentlyViewdCard
+            viewpic={viewpic4}
+            posithion="NEW"
+            productTitle="Xomie Remid 8 Sport Water Resitance Watch"
+            price="$979.00 - $1,259.00"
+          />
         </div>
       </div>
     </Container>
