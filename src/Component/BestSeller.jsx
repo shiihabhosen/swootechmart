@@ -7,23 +7,25 @@ import applewath from "../assets/applewath.png";
 import charger from "../assets/charger.png";
 import Save from "./Save";
 import { FaRegHeart } from "react-icons/fa6";
+import Container from "./Container";
 
 const BestSeller = () => {
   return (
     <>
-      <div className=" py-10 h-[636.47px]  w-full bg-white rounded-[10px]">
+     <Container>
+       <div className="h-[636.47px] my-5 py-5 w-full bg-white rounded-[10px]">
         <div className="flex justify-between px-4">
-          <div className="px-10 uppercase flex gap-10 ">
-            <h5>Best seller</h5>
-            <h5>New in</h5>
-            <h5>popular</h5>
+          <div className="px-10 uppercase flex gap-10  ">
+            <h5 className="cursor-pointer">Best seller</h5>
+            <h5 className="cursor-pointer">New in</h5>
+            <h5 className="cursor-pointer">popular</h5>
           </div>
           <p>
             <a href="">View All</a>
           </p>
         </div>
-        <div className="w-[1320px] h-[524.47px] my-10 mx-auto">
-          <div className="flex justify-between">
+        <div className="w-[1120px] h-[524.47px] my-10 mx-auto">
+          <div className="flex justify-between gap-4">
             <div>
               <div className="flex gap-[80px]">
                 <Save saveparsen="$199.00" />
@@ -93,6 +95,7 @@ const BestSeller = () => {
           </div>
         </div>
       </div>
+     </Container>
     </>
   );
 };

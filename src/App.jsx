@@ -21,6 +21,8 @@ import Login from "./Pages/Login";
 import Profile from "./Pages/Profile";
 import RegisterPage from "./Pages/RegisterPage";
 import ProductDetails from "./Pages/ProductDetails";
+import TopCallPhone from "./Pages/TopCallPhone";
+import TopCallPhoneCart from "./Pages/TopCallPhoneCart";
 
 function App() {
   return (
@@ -39,14 +41,16 @@ function App() {
       <AppDownload />
       <RecentlyViewd />
       <Fotter />
-      <Login/>
+      {/* <Login/>
       <RegisterPage/>
       <CartSecthion/>
-      <Profile/>
+      <Profile/> */}
       {/* <Contact/> */}
-      <Checkout/>
+      {/* <Checkout/>
       <About/>
-      <ProductDetails/>
+      <ProductDetails/> */}
+      <TopCallPhone/>
+     
     </>
   );
 }

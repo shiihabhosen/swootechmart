@@ -4,12 +4,14 @@ import computercase from "../assets/computercase.png";
 import lgmonitor from "../assets/lgmonitor.png";
 import chear from "../assets/chear.png";
 import ipedmini from "../assets/ipedmini.png";
+import Container from "./Container";
 
 const BrandNew = () => {
   return (
     <>
-      <div className="h-[498.88px] w-full bg-white px-10 my-4 ">
-        <h4 className="font-bold uppercase py-10">brand new for you</h4>
+    <Container>
+        <div className="h-[498.88px] w-full bg-white my-4 px-7 rounded-[10px] ">
+        <h4 className="font-bold uppercase py-8">brand new for you</h4>
         <div className="w-full h-[377.88px] flex justify-between ">
           <BrandNewCrad
             img={computercase}
@@ -33,6 +35,7 @@ const BrandNew = () => {
           />
         </div>
       </div>
+    </Container>
     </>
   );
 };

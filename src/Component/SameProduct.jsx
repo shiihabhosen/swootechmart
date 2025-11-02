@@ -15,11 +15,13 @@ import samepic9 from "../assets/samepic9.png";
 import samepic10 from "../assets/samepic10.png";
 import samepic11 from "../assets/samepic11.png";
 import samepic12 from "../assets/samepic12.png";
+import Container from "./Container";
 
 const SameProduct = () => {
   return (
     <>
-      <div className="flex justify-between">
+    <Container>
+        <div className="flex w-full gap-6 h-[742.19px] justify-between">
         <SameProducCard
           areaHeading="Audios & Cameras"
           areaImg={bestspeker}
@@ -35,9 +37,9 @@ const SameProduct = () => {
         />
         <SameProducCard
           areaHeading="gaming"
-          className='!text-black w-[110px] uppercase'
           areaImg={bestmuse}
           areatext="wireless rgb gaming mouse"
+          className='!text-black uppercase'
           areitemproduct1={samepic5}
           areitemproduct2={samepic6}
           areitemproduct3={samepic7}
@@ -54,12 +56,13 @@ const SameProduct = () => {
           areitemproduct2={samepic10}
           areitemproduct3={samepic11}
           areitemproduct4={samepic12}
-          productname1="Printers"
-          productname2="Network"
-          productname3="Security"
-          productname4="Projectors"
+          productname1="Speaker"
+          productname2="DSLR Camera"
+          productname3="Earbuds"
+          productname4="Microphone"
         />
       </div>
+    </Container>
     </>
   );
 };

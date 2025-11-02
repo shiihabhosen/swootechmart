@@ -1,17 +1,20 @@
-import React from 'react'
-import BrandCard from './BrandCard'
-import TopCatagorise from './TopCatagorise'
+import React from "react";
+import BrandCard from "./BrandCard";
+import TopCatagorise from "./TopCatagorise";
 import laptop from "../assets/laptop.png";
+import Container from "./Container";
 
 const BrandSection = () => {
   return (
     <>
-      <div className='px-4 mt-4 flex gap-4'>
-        <BrandCard />
-        <TopCatagorise img={laptop} name='Laptop'/>
-      </div>
+      <Container>
+        <div className=" mt-4 flex gap-4">
+          <BrandCard />
+          <TopCatagorise img={laptop} name="Laptop" />
+        </div>
+      </Container>
     </>
-  )
-}
+  );
+};
 
-export default BrandSection
+export default BrandSection;

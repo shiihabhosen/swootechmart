@@ -1,11 +1,13 @@
 import React from "react";
 import appdownpic from "../assets/apppic.png";
+import Container from "./Container";
 
 const AppDownload = () => {
   return (
     <>
-      <div className="px-5 pb-4 ">
-        <div className="relative flex justify-between" >
+      <Container>
+       <div className="flex justify-between gap-4 mt-9">
+         <div className="relative ">
           <img src={appdownpic} alt="" />
           <div className="absolute top-10 left-[380px]">
             <h2 className="text-[40px] font-bold text-[#FFE400]">10% Back</h2>
@@ -16,6 +18,8 @@ const AppDownload = () => {
               </span>
             </p>
           </div>
+        </div>
+        <div>
           <div className="relative">
             <img src={appdownpic} alt="" />
             <div className="absolute top-10 left-[380px]">
@@ -29,7 +33,8 @@ const AppDownload = () => {
             </div>
           </div>
         </div>
-      </div>
+       </div>
+      </Container>
     </>
   );
 };

@@ -16,11 +16,13 @@ import monitorr from "../assets/monitorr.png";
 import BestSellerCard from "./BestSellerCard";
 import { FaRegHeart } from "react-icons/fa6";
 import Save from "./Save";
+import Container from "./Container";
 
 const BestLaptop = () => {
   return (
     <>
-      <div className="w-full h-[880px] bg-white px-5">
+    <Container>
+        <div className="w-full h-[880px] bg-white my-5 rounded-[10px] px-5">
         <div className=" flex justify-between py-8">
           <h5 className="font-bold uppercase ">top cellphones & tablets</h5>
           <p>
@@ -38,7 +40,7 @@ const BestLaptop = () => {
             </div>
           </div>
           <div className="w-[700px] h-[220px] py-7">
-            <div className="grid grid-cols-3 space-y-7">
+            <div className="grid grid-cols-3 space-y-7 ml-4">
               <div className="flex gap-5 cursor-pointer">
                 <div>
                   <h5 className="font-bold">Macbook</h5>
@@ -154,6 +156,7 @@ const BestLaptop = () => {
           </div>
         </div>
       </div>
+    </Container>
     </>
   );
 };
