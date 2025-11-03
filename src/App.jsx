@@ -41,14 +41,14 @@ function App() {
       <AppDownload />
       <RecentlyViewd />
       <Fotter />
-      {/* <Login/>
+      <Login/>
       <RegisterPage/>
-      <CartSecthion/>
-      <Profile/> */}
-      {/* <Contact/> */}
-      {/* <Checkout/>
+      {/* <CartSecthion/> */}
+      <Profile/>
+      <Contact/>
+      <Checkout/>
       <About/>
-      <ProductDetails/> */}
+      <ProductDetails/>
       <TopCallPhone/>
      
     </>

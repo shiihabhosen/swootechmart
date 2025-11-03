@@ -9,7 +9,7 @@ const Login = () => {
   return (
     <>
       <Container>
-        <div className="w-full h-[623.39px] py-[100px] bg-white mt-[50px] justify-center flex  gap-[190px]">
+        <div className="w-full h-[623.39px] py-[100px] rounded-[10px] bg-white my-5 justify-center flex  gap-[190px]">
           <div>
             <img src={loginimg} alt="" />
           </div>

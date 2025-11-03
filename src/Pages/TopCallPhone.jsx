@@ -142,7 +142,7 @@ const TopCallPhone = () => {
           </div>
         </div>
         {/* <TopCallPhoneCart /> */}
-        <div className="w-full h-[2632.98px] bg-black rounded-[10px] mb-5 p-6 ">
+        <div className="w-full h-[2632.98px] bg-white rounded-[10px] mb-5 p-6 ">
           <div className="flex gap-6">
             <div className="w-[302.5px] h-[597.39px] bg-secundary rounded-[10px] p-6  ">
               <div>
@@ -456,45 +456,54 @@ const TopCallPhone = () => {
                 />
               </div>
             </div>
-            {/* all phone secthion  */}
-            <div className="flex ">
-              {/* Left side: Results count */}
-              <div>
-                <h6 className="font-bold text-[14px]">
-                  1 - 40{" "}
-                  <span className="text-[12px] font-medium text-[#666666]">
-                    of 120 results
-                  </span>
-                </h6>
-              </div>
-
-              {/* Middle section: Show item (numbers) */}
-              <div className="flex items-center gap-3">
-                <h6 className="text-[#666666] text-[14px]">Show item</h6>
-                <div className="flex items-center bg-[#F3F4F6] rounded-md px-3 py-1 gap-3">
-                  <h5 className="cursor-pointer font-semibold text-[14px] text-black bg-[#E5E7EB] px-2 py-0.5 rounded-md">
-                    24
-                  </h5>
-                  <h5 className="cursor-pointer font-medium text-[14px] text-[#666666] hover:text-black">
-                    48
-                  </h5>
-                  <h5 className="cursor-pointer font-medium text-[14px] text-[#666666] hover:text-black">
-                    72
-                  </h5>
+            {/* product secthion */}
+            <div className="w-[967.5px] h-[1970px] bg-amber-600">
+              {/* pasinathion top secthion */}
+              <div className="flex items-center justify-between py-3 px-4">
+                {/* Left side: Results count */}
+                <div>
+                  <h6 className="font-bold text-[14px]">
+                    1 - 40{" "}
+                    <span className="text-[12px] font-medium text-[#666666]">
+                      of 120 results
+                    </span>
+                  </h6>
                 </div>
-              </div>
 
-              {/* Right section: Sort + View As */}
-              <div className="flex items-center gap-6">
+                {/* Middle section: Show item (numbers) */}
                 <div className="flex items-center gap-3">
                   <h6 className="text-[#666666] text-[14px]">Show item</h6>
-                  <select className="border border-[#E5E7EB] rounded-md bg-[#F3F4F6] px-3 py-1 text-[14px] font-medium text-black outline-none">
-                    <option>Default</option>
-                    <option>Newest</option>
-                    <option>Popular</option>
-                  </select>
+                  <div className="flex items-center bg-[#F3F4F6] rounded-md px-3 py-1 gap-3">
+                    <h5 className="cursor-pointer font-semibold text-[14px] text-black bg-[#E5E7EB] px-2 py-0.5 rounded-md">
+                      24
+                    </h5>
+                    <h5 className="cursor-pointer font-medium text-[14px] text-[#666666] hover:text-black">
+                      48
+                    </h5>
+                    <h5 className="cursor-pointer font-medium text-[14px] text-[#666666] hover:text-black">
+                      72
+                    </h5>
+                  </div>
                 </div>
-                <h6 className="text-[#666666] text-[14px]">View As</h6>
+
+                {/* Right section: Sort + View As */}
+                <div className="flex items-center gap-6">
+                  <div className="flex items-center gap-3">
+                    <h6 className="text-[#666666] text-[14px]">Show item</h6>
+                    <select className="border border-[#E5E7EB] rounded-md bg-[#F3F4F6] px-3 py-1 text-[14px] font-medium text-black outline-none">
+                      <option>Default</option>
+                      <option>Newest</option>
+                      <option>Popular</option>
+                    </select>
+                  </div>
+                  <h6 className="text-[#666666] text-[14px]">
+                    <a href="">View As</a>
+                  </h6>
+                </div>
+              </div>
+              {/* all phone secthion  */}
+              <div>
+                
               </div>
             </div>
           </div>
